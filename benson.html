@@ -1,38 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Benson</title>
     <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+      form {
+        background-color: rgb(250, 250, 250);
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
       }
-      li {
-        float: left;
+      input[type="text"] {
+        width: 30%;
+        padding: 5px 10px;
+        margin: 2px 0px;
       }
-
-      li a {
-        display: block;
-        padding: 20px 20px 15px 30px;
-        background-color: rgb(20, 18, 18);
+      input[type="password"] {
+        width: 30%;
+        padding: 5px 9px;
+        margin: 2px;
+      }
+      input[type="submit"] {
+        width: 31%;
+        text-align: center;
+        color: white;
+        background-color: rgb(55, 156, 55);
+        padding: 5px 9px;
+        margin: 2px;
+      }
+      input[id="cancel"] {
+        border: none;
+        background-color: red;
         color: white;
         text-align: center;
-      }
-      li a:hover {
-        background-color: teal;
+        padding: 10px 5px;
+        margin-top: 45px;
+        width: 15%;
       }
     </style>
   </head>
+
   <body>
     <div>
-      <nav>
-        <ul>
-          <li><a href="#" style="text-decoration: none">Home</a></li>
-          <li><a href="#" style="text-decoration: none">News</a></li>
-          <li><a href="#" style="text-decoration: none">Contact</a></li>
-        </ul>
-      </nav>
+      <form>
+        <label for="username">Username</label><br />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username"
+        />
+        <br />
+        <br />
+        <lable for="Password">Password</lable><br />
+        <input type="password" id="Password" placeholder="Enter Password" />
+        <br />
+        <br />
+        <input type="submit" value="Login" /><br /><br />
+        <input type="checkbox" id="remember me" />
+        <lable for="remember me">Remember me</lable><br />
+        <input type="submit" value="Cancel" id="cancel" />
+      </form>
     </div>
   </body>
 </html>
