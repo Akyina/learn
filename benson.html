@@ -1,45 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Benson</title>
     <style>
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
+      form {
+        background-color: rgb(250, 250, 250);
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+        width: 50%;
       }
-      li {
-        float: left;
+      input[type="text"] {
+        width: 30%;
+        padding: 5px 10px;
+        margin: 2px 0px;
       }
-
-      li a {
-        display: block;
-        padding: 20px 20px 15px 30px;
-        background-color: rgb(20, 18, 18);
+      input[type="password"] {
+        width: 30%;
+        padding: 5px 9px;
+        margin: 2px;
+      }
+      input[type="submit"] {
+        width: 31%;
+        text-align: center;
+        color: white;
+        background-color: rgb(55, 156, 55);
+        padding: 5px 9px;
+        margin: 2px;
+      }
+      input[id="cancel"] {
+        border: none;
+        background-color: red;
         color: white;
         text-align: center;
-        text-decoration: none;
-      }
-      li a:hover {
-        background-color: teal;
+        padding: 10px 5px;
+        /* changed here as well */
+        margin: 45px 0 0 0;
+        width: 15%;
       }
     </style>
   </head>
+
   <body>
     <div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <form>
+        <label for="username">Username</label><br />
+        <input
+          type="text"
+          name="username"
+          id="username"
+          placeholder="Enter Username"
+        />
+        <br />
+        <br />
+        <lable for="Password">Password</lable><br />
+        <input type="password" id="Password" placeholder="Enter Password" />
+        <br />
+        <br />
+        <!-- i gave this a type of submit because, onclicking this button, you actually want to be authenticated and login -->
+        <input type="submit" value="Login" /><br /><br />
+        <input type="checkbox" id="remember me" />
+        <lable for="remember me">Remember me</lable><br />
+        <!-- i gave the  cancel button of type button, this way it doesnt do anything in form submission to server -->
+        <input type="button" value="Cancel" id="cancel" />
+      </form>
     </div>
   </body>
 </html>
-
-<!-- Noticed How i arranged it ? 
-    All style tags should be within the head tag
-
-    i removed the meta tag, dont worry you wll get to that later
--->
