@@ -1,86 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <style>
-      form {
-        background-color: rgb(250, 250, 250);
-        padding: 0px;
-        margin: 0px;
-        box-sizing: border-box;
-        width: 50%;
-        font-family: sans-serif;
-        box-shadow: 5px 5px 3px gray;
-        border-radius: 20px;
-      }
-      input[type="text"] {
-        width: 30%;
-        padding: 5px 10px;
-        margin: 2px 20px;
-        font-family: serif;
-      }
-      input[type="password"] {
-        width: 30%;
-        padding: 5px 9px;
-        margin: 2px 20px;
-        font-family: serif;
-      }
-      input[type="submit"] {
-        width: 31%;
-        text-align: center;
-        color: white;
-        background-color: rgb(55, 156, 55);
-        padding: 5px 9px;
-        margin: 2px 20px;
-      }
-      input[type="button"] {
-        border: none;
-        background-color: red;
-        color: white;
-        text-align: center;
-        padding: 10px 5px;
-        margin-top: 45px;
-        margin-left: 20px;
-        margin-bottom: 5px;
-        width: 15%;
-      }
-      input[type="checkbox"] {
-        text-align: center;
-        margin: 2px 5px;
-      }
-      label {
-        text-align: center;
-        margin: 2px 17px;
-      }
 
-      /*
+<head>
+  <style>
+    form {
+      background-color: rgb(250, 250, 250);
+      padding: 0px;
+      margin: 0px;
+      box-sizing: border-box;
+      width: 40%;
+      font-family: sans-serif;
+      box-shadow: 5px 5px 3px gray;
+      border-radius: 20px;
+    }
+
+    input[type="text"] {
+      width: 85%;
+      padding: 5px 10px;
+      margin: 2px 20px;
+      font-family: serif;
+    }
+
+    input[type="password"] {
+      width: 85%;
+      padding: 5px 9px;
+      margin: 2px 20px;
+      font-family: serif;
+    }
+
+    input[type="submit"] {
+      width: 90%;
+      text-align: center;
+      color: white;
+      background-color: rgb(55, 156, 55);
+      padding: 5px 9px;
+      margin: 2px 20px;
+    }
+
+    input[type="button"] {
+      border: none;
+      background-color: red;
+      color: white;
+      text-align: center;
+      padding: 10px 5px;
+      margin-top: 30px;
+      margin-left: 20px;
+      margin-bottom: 5px;
+      width: 15%;
+    }
+
+    input[type="checkbox"] {
+      text-align: center;
+      margin: 2px 5px;
+    }
+
+    label {
+      text-align: center;
+      margin: 2px 17px;
+    }
+
+    /*
       i want to style all labels but it seems only username lable is being affected
       */
-    </style>
-  </head>
+  </style>
+</head>
 
-  <body>
-    <div>
-      <form>
-        <label for="username">Username</label><br />
-        <input
-          type="text"
-          name="username"
-          id="username"
-          placeholder="Enter Username"
-        />
-        <br />
-        <br />
-        <lable for="Password" id="pass">Password</lable><br />
+<body>
+  <div>
+    <form>
+      <label for="username">Username</label><br />
+      <input type="text" name="username" id="username" placeholder="Enter Username" />
+      <br />
+      <br />
+      <label for="Password" id="pass">Password</lable><br />
         <input type="password" id="Password" placeholder="Enter Password" />
         <br />
         <br />
         <input type="submit" value="Login" /><br /><br />
         <input type="checkbox" id="remember me" />
-        <lable for="remember me">Remember me</lable><br />
-        <input type="button" value="Cancel" />
-      </form>
-    </div>
-  </body>
+        <label for="remember me">Remember me</lable><br />
+          <input type="button" value="Cancel" />
+    </form>
+  </div>
+</body>
+
 </html>
 
 <!-- Noticed How i arranged it ? 
